@@ -34,7 +34,7 @@ const user = {
     Login({commit, state}, loginForm) {
       return new Promise((resolve, reject) => {
         api({
-          url: "/app/login/auth",
+          url: "/login/auth",
           method: "post",
           data: loginForm
         }).then(data => {
